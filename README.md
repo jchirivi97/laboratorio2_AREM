@@ -37,6 +37,9 @@ Para este laboratorio se utiliza el editor de preferencia Eclipce y ademas la im
 * [Java] (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * [Maven] (https://maven.apache.org/)
 
+# Despliegue en Heroku 
+
+link del aplicativo: https://lab2arem.herokuapp.com/inputdata
 
 ## Autores
 
