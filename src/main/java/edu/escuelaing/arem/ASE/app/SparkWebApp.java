@@ -53,7 +53,16 @@ public class SparkWebApp {
     	String cadena = Float.toString(media);
     	String cadena2 = Float.toString(desviasion);
     	
-        return req.queryParams("numero");
+    	String respuesta = "<!DOCTYPE html>"
+                + "<html>"
+                + "<body>"
+                + "<h2>CALCULADORA DE DESVIACION ESTANDAR</h2>"
+                + "<p>"+"La media es :" + cadena+ "</p>"
+                + "<p>"+"La desviacion estandar es :" + cadena2+ "</p>"
+                + "</body>"
+                + "</html>";
+    	
+        return respuesta;
     }
 
     /**
@@ -67,6 +76,6 @@ public class SparkWebApp {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
         }
-        return 4576; //returns default port if heroku-port isn't set (i.e. on localhost)
+        return 4176; //returns default port if heroku-port isn't set (i.e. on localhost)
     }
 }
